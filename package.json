@@ -3,16 +3,28 @@
   "author": "jden <jason@denizac.org>",
   "version": "0.1.0",
   "description": "write skrollr animations in a css-like syntax",
-  "keywords": ["parallax"],
+  "keywords": [
+    "parallax"
+  ],
   "main": "index.js",
   "scripts": {
     "test": "mocha"
   },
+  "bin": "cli.js",
   "repository": "git@github.com:jden/node-skrollr-css.git",
   "license": "ISC",
   "readmeFilename": "README.md",
   "devDependencies": {
     "chai": "^1.9.1",
     "mocha": "^1.19.0"
+  },
+  "dependencies": {
+    "css": "^1.6.0",
+    "concat-stream": "^1.4.6",
+    "css-parse": "^1.7.0",
+    "chokidar": "^0.8.2",
+    "minimist": "^0.1.0",
+    "from2": "0.0.0",
+    "literal-stream": "^0.1.0"
   }
 }
