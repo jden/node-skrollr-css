@@ -40,9 +40,7 @@ var destFile = argv.o
 var dest = destFile ? fs.createWriteStream(destFile) : process.stdout
 cli(src, dest)
 
-console.log(argv)
 if (argv.w) {
-  console.log('sdf')
   if (src == process.stdin || dest == process.stdout) {
     console.error('to use with watch, must give source and dest file as argument\n')
     help()
@@ -55,7 +53,7 @@ if (argv.w) {
 }
 
 function help() {
-  console.log(argv, ' [source file?] [-o out file] [-w watch]')
+  console.log(argv._[1], ' [source file?] [-o out file] [-w watch]')
   console.log('  -v  version')
   console.log('  -h  this help text')
 }
